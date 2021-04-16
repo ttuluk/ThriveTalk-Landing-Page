@@ -1,0 +1,170 @@
+Result Skip Results Iframe EDIT ON *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
+}
+
+.container {
+  max-width: 960px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tile-set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 40px;
+  margin-left: -40px;
+  margin-top: -40px;
+}
+
+.tile {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 40px;
+  height: 120px;
+  flex-basis: calc(100% / 2 - 40px);
+  border: 2px dashed #2a2a2a;
+  border-radius: 4px;
+  background-color: #fff;
+
+  background-image: url("https://www.flaticon.com/svg/static/icons/svg/616/616408.svg");
+  background-size: 40px;
+}
+
+.tile::before {
+  position: absolute;
+  top: -32px;
+  width: 100%;
+  content: "";
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+
+.no-repeat {
+  background-color: red;
+  background-posision: bottom;
+}
+
+.no-repeat::before {
+  content: "no-repeat";
+  font-family: monospace;
+}
+
+.repeat-x {
+  background-repeat: repeat-x;
+}
+
+.repeat-x::before {
+  content: "repeat-x";
+}
+
+.repeat-y {
+  background-repeat: repeat-y;
+}
+
+.repeat-y::before {
+  content: "repeat-y";
+}
+
+.repeat {
+  background-repeat: repeat;
+}
+
+.repeat::before {
+  content: "repeat";
+}
+/* Свойство background-image*/
+.tile-set2 {
+  display: flex;
+  justify-content: center;
+}
+
+.tile2 {
+  padding: 10px;
+  text-align: center;
+  border: 2px dashed #2a2a2a;
+  border-radius: 4px;
+}
+
+.tile2:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon2 {
+  display: inline-flex;
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon2.with-bg {
+  background-color: #ff9800;
+}
+
+.icon2.with-icon {
+  background-image: url("https://www.flaticon.com/svg/static/icons/svg/614/614180.svg");
+  background-position: top 50px;
+}
+/*позиция*/
+:root {
+  --wrapper-width: 320px;
+  --wrapper-height: var(--wrapper-width);
+  --dot-width: 16px;
+}
+
+.wrapper {
+  width: var(--wrapper-width);
+  height: var(--wrapper-height);
+  margin: auto;
+  background: var(--wr-color) url(https://image.ibb.co/n0M0cQ/red90x90.jpg)
+    no-repeat;
+  /*   background-position: 50% 50%; */
+  position: relative;
+}
+
+.controls {
+  width: var(--wrapper-width);
+  height: calc(var(--wrapper-width) / 5);
+  margin: 10px auto;
+}
+
+label {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-family: var(--ss);
+}
+
+#h1-x,
+#h1-y {
+  color: #fff;
+  font-size: 20px;
+  font-family: var(--ss);
+  text-align: center;
+}
+
+.dot {
+  width: var(--dot-width);
+  height: var(--dot-width);
+  background: #fff;
+  border-radius: calc(var(--dot-width) / 2);
+  position: absolute;
+  top: calc(var(--dot-width) / -2);
+  left: calc(var(--dot-width) / -2);
+}

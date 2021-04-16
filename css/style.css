@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #212121;
+}
+ul {
+  padding: 0;
+}
+
+.container {
+  width: 1400px;
+  box-sizing: border-box;
+  margin: 20px;
+  padding: 10px;
+}
+.list-image {
+  display: flex;
+  flex-wrap: wrap;
+  outline: 2px solid red;
+}
+.item-box {
+  display: flex;
+  flex-basis: calc((100% - 3 * 10px) / 3);
+  align-items: center;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0;
+  background-color: pink;
+}
+.item-box.box {
+  background-color: aqua;
+}
+
+.item-box.strawbery {
+  background-image: url(/image/about/strawberry.jpg);
+  height: 480px;
+}
