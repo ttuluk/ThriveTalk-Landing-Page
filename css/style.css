@@ -1,3 +1,29 @@
+:root {
+  --accent-text-color: rgba(250, 182, 62, 1);
+  --title-text-color:rgba(34, 53, 111, 1);
+  --primary-text-color:color: rgba(34, 53, 111, 0.5);
+  --logo-text-color: rgba(98, 208, 223, 1);
+  --white-text-color: #ffffff;
+  --link-text-color: rgba(26, 188, 254, 1);
+  --info-text-color:rgba(105, 105, 105, 1);
+  --info-second-title-color:rgba(79, 79, 79, 1);
+  --info-title-color:rgba(41, 41, 41, 1);
+  --info-made-color:rgba(162, 89, 255, 1);
+  --primary-bg-color: rgba(244, 249, 226, 1);
+  --bg-color: #ffffff;
+  --info-bg-color:#E5E5E5;
+  --section-bg-color:rgba(98, 208, 223, 1);
+  --pink-box-color: rgba(255, 226, 222, 1);
+  --green-box-color:#C4E769;
+  --light-blue-box-color:#62D0DF;
+  --blue-box-color:#0052C1;
+  --dark-blue-color:#22356F;
+  --box-shadow:;
+  --grey-box-color:#DEE1FF;
+  --purple-box-color:#8F00FF;
+
+  
+}
 * {
   box-sizing: border-box;
 }
